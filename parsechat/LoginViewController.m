@@ -6,18 +6,45 @@
 //  Copyright © 2019 codepath. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
+#import "Parse.h"
 
-@interface ViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (void)loginUser {
+    NSString *username = self.usernameLogin.text;
+    NSString *password = self.passwordLogin.text;
+    
+    [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
+        if (error != nil) {
+            NSLog(@"User log in failed: %@", error.localizedDescription);
+        } else {
+            NSLog(@"User logged in successfully");
+            
+            // display view controller that needs to shown after successful login
+        }
+    }];
+}
+
+
+- (IBAction)signupPressed:(id)sender {
+    [self performSegueWithIdentifier:@"toSignUp" sender:self];
+}
+
+- (IBAction)loginPressed:(id)sender {
+[self performSegueWithIdentifier:@"loginSegue" sender:self];
+}
+
+
 
 
 @end

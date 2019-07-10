@@ -18,6 +18,9 @@
 		FEACAB9E22D65A7900AB2480 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACAB9D22D65A7900AB2480 /* main.m */; };
 		FEACABA822D65A7900AB2480 /* parsechatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACABA722D65A7900AB2480 /* parsechatTests.m */; };
 		FEACABB322D65A7900AB2480 /* parsechatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACABB222D65A7900AB2480 /* parsechatUITests.m */; };
+		FEACABC222D65E0C00AB2480 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACABC122D65E0C00AB2480 /* SignUpViewController.m */; };
+		FEACABC522D6627F00AB2480 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACABC422D6627F00AB2480 /* ChatViewController.m */; };
+		FEACABC822D6660D00AB2480 /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEACABC722D6660D00AB2480 /* ChatCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		FEACABAE22D65A7900AB2480 /* parsechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parsechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEACABB222D65A7900AB2480 /* parsechatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parsechatUITests.m; sourceTree = "<group>"; };
 		FEACABB422D65A7900AB2480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEACABC022D65E0C00AB2480 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		FEACABC122D65E0C00AB2480 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		FEACABC322D6627F00AB2480 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		FEACABC422D6627F00AB2480 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		FEACABC622D6660D00AB2480 /* ChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		FEACABC722D6660D00AB2480 /* ChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +155,16 @@
 				FEACAB9122D65A7800AB2480 /* LoginViewController.h */,
 				FEACAB9222D65A7800AB2480 /* LoginViewController.m */,
 				FEACAB9422D65A7800AB2480 /* Main.storyboard */,
+				FEACABC322D6627F00AB2480 /* ChatViewController.h */,
+				FEACABC422D6627F00AB2480 /* ChatViewController.m */,
 				FEACAB9722D65A7900AB2480 /* Assets.xcassets */,
 				FEACAB9922D65A7900AB2480 /* LaunchScreen.storyboard */,
 				FEACAB9C22D65A7900AB2480 /* Info.plist */,
 				FEACAB9D22D65A7900AB2480 /* main.m */,
+				FEACABC022D65E0C00AB2480 /* SignUpViewController.h */,
+				FEACABC122D65E0C00AB2480 /* SignUpViewController.m */,
+				FEACABC622D6660D00AB2480 /* ChatCell.h */,
+				FEACABC722D6660D00AB2480 /* ChatCell.m */,
 			);
 			path = parsechat;
 			sourceTree = "<group>";
@@ -394,6 +409,9 @@
 			files = (
 				FEACAB9322D65A7800AB2480 /* LoginViewController.m in Sources */,
 				FEACAB9E22D65A7900AB2480 /* main.m in Sources */,
+				FEACABC522D6627F00AB2480 /* ChatViewController.m in Sources */,
+				FEACABC822D6660D00AB2480 /* ChatCell.m in Sources */,
+				FEACABC222D65E0C00AB2480 /* SignUpViewController.m in Sources */,
 				FEACAB9022D65A7800AB2480 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
