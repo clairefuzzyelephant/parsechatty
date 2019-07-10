@@ -141,7 +141,7 @@
                         <outlet property="passwordSignup" destination="eI1-uc-bGy" id="PW3-Gg-ioL"/>
                         <outlet property="signupButton" destination="bWt-Pc-dC3" id="57i-vk-TvY"/>
                         <outlet property="usernameSignup" destination="g66-cu-2NL" id="cTA-Rq-cbk"/>
-                        <segue destination="BKo-bu-dxk" kind="presentation" identifier="signUpToChat" id="nCj-oT-oI1"/>
+                        <segue destination="dd8-Fr-iQY" kind="presentation" identifier="signUpToChat" id="WTy-7k-88X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XBP-XK-TxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,7 +221,7 @@
         <!--Navigation Controller-->
         <scene sceneID="JMs-am-AIj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BKo-bu-dxk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Authenticated" automaticallyAdjustsScrollViewInsets="NO" id="BKo-bu-dxk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y89-es-HHo">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -236,8 +236,24 @@
             </objects>
             <point key="canvasLocation" x="1594.2028985507247" y="687.72321428571422"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ocw-9W-3yv">
+            <objects>
+                <navigationController id="dd8-Fr-iQY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cnh-gw-yjh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dwm-LT-JkJ" kind="relationship" relationship="rootViewController" id="hCO-Nn-fn5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83m-iO-0Gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336" y="1376"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ooF-0E-bzl"/>
+        <segue reference="hCO-Nn-fn5"/>
     </inferredMetricsTieBreakers>
 </document>

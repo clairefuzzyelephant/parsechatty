@@ -48,14 +48,14 @@
 }
 
 -(void)beginRefresh{
+    NSLog(@"refreshing");
     PFQuery *query = [PFQuery queryWithClassName:@"Message_fbu2019"];
-    query.limit = 20;
+    query.limit = 100;
+    [query orderByDescending:@"createdAt"];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *messages, NSError *error){
         if (messages != nil ){
-            [query orderByDescending:@"createdAt"];
             self.messages = messages;
-            [self.tableView reloadData];
         }
         else{
             NSLog(@"%@", error.localizedDescription);
@@ -64,11 +64,11 @@
 }
 
 -(void)onTimer{
-    
     [self beginRefresh];
-    
-    
+    [self.tableView reloadData];
 }
+
+
 - (IBAction)logOutTap:(id)sender {
     [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
         // PFUser.current() will now be nil
